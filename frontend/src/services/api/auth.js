@@ -47,7 +47,7 @@ export const getActivationKey = async email => {
 };
 
 export const getKeyVerify = async key => {
-  const result = await instance.get(`/users/verify/${key}`);
+  const result = await instance.get(`/users/verifykey/${key}`);
   return result.data;
 };
 

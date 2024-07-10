@@ -39,7 +39,7 @@ router.post("/refresh", validateBody(refreshSchema), ctrlWrapper(ctrl.refresh));
 
 router.get("/key/:email", ctrlWrapper(ctrl.sendKey));
 
-router.get("key/verify/:key", ctrlWrapper(ctrl.verifyKey));
+router.get("/verifykey/:key", ctrlWrapper(ctrl.verifyKey));
 
 router.patch(
   "/password",

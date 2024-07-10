@@ -28,7 +28,7 @@ const ThemeSwitcher = () => {
             break;
         
         default:
-             root.style.setProperty('--main-color', '#212121');
+            root.style.setProperty('--main-color', '#212121');
             root.style.setProperty('--second-color', '#9b9faa');
             root.style.setProperty('--bg-color', '#fff');
             root.style.setProperty('--scroll-color', '#f0f1f3');
