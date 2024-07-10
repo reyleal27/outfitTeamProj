@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 import useWindowDimensions from '../../services/hooks/useWindowDimensions';
 import s from './CalculatorPage.module.css';
 import { DailyCaloriesForm, SideBar, Container, Footer } from 'components';
-import { getTheme } from 'redux/themeswitcher/themeSelector';
+import { getTheme } from 'redux/slimDaddy/selectors.slimDaddy';
 
 const CalculatorPage = () => {
   const { width } = useWindowDimensions();

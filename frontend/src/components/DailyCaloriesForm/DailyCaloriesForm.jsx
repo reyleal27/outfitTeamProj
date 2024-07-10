@@ -10,6 +10,7 @@ import { Button, Modal, DailyCalorieIntake } from 'components';
 import { toast } from 'react-toastify';
 import s from '../DailyCaloriesForm/DailyCaloriesForm.module.css';
 
+
 export default function DailyCaloriesForm() {
   const dispatch = useDispatch();
 
@@ -26,6 +27,8 @@ export default function DailyCaloriesForm() {
     dispatch(updateModalStatus(!showModal));
     document.body.style.overflowY = 'visible';
   };
+
+ 
 
   const resetForm = () => {
     setHeight('');

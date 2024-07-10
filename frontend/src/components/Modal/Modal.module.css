@@ -71,3 +71,8 @@
     border: none;
   }
 }
+
+
+.dark{
+  background: var(--dark-modal-bg);
+}

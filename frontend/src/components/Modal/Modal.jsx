@@ -9,6 +9,7 @@ import PropTypes from 'prop-types';
 
 import closeIcon from '../../assets/icons/modal-close.svg';
 import s from '../Modal/Modal.module.css';
+import { getTheme } from 'redux/slimDaddy/selectors.slimDaddy';
 
 const modalRoot = document.querySelector('#modal-root');
 
@@ -35,9 +36,11 @@ export default function Modal({ onClose, component }) {
     }
   };
 
+  const selectedTheme = useSelector(getTheme);
+
   return createPortal(
     <div onClick={onBackdropClose} className={s.overlay}>
-      <div className={s.modal}>
+      <div className={`${s.modal} ${s[selectedTheme]}`}>
         <button type="button" onClick={onClose} className={s.button}>
           <svg className={s.icon} width={12} height={12}>
             <use href={closeIcon + '#close-modal-cross'}></use>

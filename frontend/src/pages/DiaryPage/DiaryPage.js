@@ -12,7 +12,7 @@ import {
 } from '../../components';
 import s from './DiaryPage.module.css';
 import { useSelector } from 'react-redux';
-import { getTheme } from 'redux/themeswitcher/themeSelector';
+import { getTheme } from 'redux/slimDaddy/selectors.slimDaddy';
 
 
 const DiaryPage = () => {

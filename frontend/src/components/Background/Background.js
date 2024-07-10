@@ -2,7 +2,6 @@ import s from './Background.module.css';
 import { useSelector } from 'react-redux';
 import { getLoginStatus } from 'redux/auth/auth-selector';
 import { useLocation } from 'react-router-dom';
-import { getTheme } from 'redux/themeswitcher/themeSelector';
 
 const Background = ({ children }) => {
   const isLogin = useSelector(getLoginStatus);
@@ -20,11 +19,11 @@ const Background = ({ children }) => {
     }
   })();
 
-  const selectedTheme = useSelector(getTheme);
+
 
   return (
     <>
-      <div className={`${selectedTheme === 'light' ? style : 'darkBackground' }`}>{children}</div>
+      <div className={style}>{children}</div>
     </>
   );
 };

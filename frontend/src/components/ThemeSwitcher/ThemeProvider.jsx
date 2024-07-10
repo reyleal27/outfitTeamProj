@@ -1,6 +1,6 @@
 import React, { createContext } from 'react';
 import { useSelector } from 'react-redux';
-import { getTheme } from 'redux/themeswitcher/themeSelector';
+import { getTheme } from 'redux/slimDaddy/selectors.slimDaddy';
 
 
 export const ThemeContext = createContext({ theme: 'light' });

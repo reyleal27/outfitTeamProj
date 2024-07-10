@@ -8,7 +8,9 @@ const sendKey = async (req, res) => {
   const key = uuidv4();
   const user = await User.findOneAndUpdate(
     { email },
-    { key, verifiedKey: false },
+    {key,
+    verifiedKey: false
+    },
     {
       new: true,
     }
@@ -19,8 +21,8 @@ const sendKey = async (req, res) => {
     const mail = {
       to: user.email,
       subject: "Activation key. Slim Mom App",
-      html: `<h1>Hello, [[var:name]]! You forgot password and want to save new password</h1> 
-        <p>Activation key: [[var:key]]</p>
+      html: `<h1>Hello, ${user.name}! You forgot password and want to save new password</h1> 
+        <p>Activation key: ${key}</p>
         <p>Please copy activation key and enter in Slim Mom App</p>`,
       Vars: {
         name: user.name,

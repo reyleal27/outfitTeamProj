@@ -10,7 +10,7 @@ import { getAccessToken, getLoginStatus, getModalStatus } from 'redux/auth/auth-
 import { useSearchParams } from 'react-router-dom';
 import { setAccessToken, setRefreshToken } from 'redux/auth/auth-slice';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
-import { getTheme } from 'redux/themeswitcher/themeSelector';
+import { getTheme } from 'redux/slimDaddy/selectors.slimDaddy';
 
 const App = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -51,6 +51,7 @@ const App = () => {
       dispatch(getCurrentUser());
     }
   }, [dispatch, isLogin, accessToken]);
+
 
   return (
     <div className= {selectedTheme}>

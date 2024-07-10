@@ -5,6 +5,7 @@ const { SOCIAL_REDIRECT_URL } = process.env;
 
 const verifyEmail = async (req, res) => {
   const { verificationToken } = req.params;
+  console.log(verificationToken);
   const user = await User.findOne({ verificationToken });
   if (!user) {
     throw httpError(404, "User not found");
@@ -14,7 +15,6 @@ const verifyEmail = async (req, res) => {
       verify: true,
       verificationToken: null,
     });
-
   }
 
   const { accessToken, refreshToken } = await createTokens(user._id);

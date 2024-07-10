@@ -28,7 +28,7 @@
     --dark-modal-bg: #2b2930;
 }
 
-.light {
+/* .light {
   .text {
     color: var(--text-color);
   };
@@ -60,7 +60,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx){
     .darkBackground{
-      background-image: url(./assets//png/backgroundDiaryCalcDeskTop_x2.png),linear-gradient(to right, rgb(62, 62, 63), rgb(12, 11, 11));
+      background-image: url(./assets//png/backgroundDiaryCalcDeskTop_x2.png),linear-gradient(to right, var(--dark-background-color), var(--dark-third-bg-color));
       }   
     }
    
@@ -79,9 +79,9 @@
     color: var(--dark-text-color);
     box-shadow: 0px 4px 10px rgba(199, 198, 197, 0.5);
   }
- 
 
-}
+
+} */
 
 @font-face {
   font-family: 'gothampro';

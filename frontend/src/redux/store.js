@@ -5,7 +5,7 @@ import storage from 'redux-persist/lib/storage';
 
 import productsReducer from './products/products-slice';
 import authReducer from './auth/auth-slice';
-import { themeSliceReducer } from './themeswitcher/themeSwitcher';
+import { themeSliceReducer } from './slimDaddy/slice.slimDaddy';
 
 const persistAuthConfig = {
   key: 'user-token',

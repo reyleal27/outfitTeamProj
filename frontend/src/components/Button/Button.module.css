@@ -18,7 +18,7 @@
   text-align: center;
   letter-spacing: 0.04em;
 
-  color: var(--bg-color);
+  color: var(--main-color);
 
   transition: all 250ms linear;
 }

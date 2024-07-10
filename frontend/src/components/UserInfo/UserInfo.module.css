@@ -9,6 +9,7 @@
   font-weight: 700;
   line-height: 0.95;
   padding: 15px 18px 13px 0;
+  color: var(--main-color);
 }
 .text::after {
   position: absolute;
@@ -26,6 +27,7 @@
   border: none;
   font-weight: 700;
   line-height: 0.95;
+ 
 }
 .btn:hover {
   color: var(--second-color);
@@ -43,4 +45,8 @@
     right: 20px;
     top: 0;
   }
+}
+
+.dark{
+  background-color: transparent;
 }
