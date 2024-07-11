@@ -82,7 +82,7 @@
         "operationId": "LoginUser",
         "parameters": [
           {
-            "name": "examplename",
+            "name": "email",
             "in": "query",
             "description": "name",
             "required": true,
@@ -770,7 +770,7 @@
         "properties": {
           "name": {
             "type": "string",
-            "example": "examplename"
+            "example": "email"
           },
           "email": {
             "type": "string",
@@ -791,7 +791,7 @@
         "properties": {
           "name": {
             "type": "string",
-            "example": "examplename"
+            "example": "email"
           },
           "email": {
             "type": "string",
@@ -840,7 +840,7 @@
               },
               "password": {
                 "type": "string",
-                "example": "exampleName"
+                "example": "email"
               }
             }
           }
@@ -877,7 +877,7 @@
               },
               "password": {
                 "type": "string",
-                "example": "exampleName"
+                "example": "email"
               }
             }
           }

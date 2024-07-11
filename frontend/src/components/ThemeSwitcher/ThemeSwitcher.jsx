@@ -21,7 +21,7 @@ const ThemeSwitcher = () => {
         root.style.setProperty('--main-color', '#ffffff');
             root.style.setProperty('--second-color', '#264061');
             root.style.setProperty('--bg-color', '#353535');
-              root.style.setProperty('--scroll-color', '#181717');
+            root.style.setProperty('--scroll-color', '#181717');
             root.style.setProperty('--accent-color', '#40367b');
             root.style.setProperty('--btn-box-shadow', '0px 4px 10px rgba(6, 6, 45, 0.247)');
             // Add other color properties for dark theme
