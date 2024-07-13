@@ -3,12 +3,14 @@ const express = require("express");
 const { validateBody, authenticate } = require("../../middlewares");
 const { ctrlWrapper } = require("../../helpers");
 
+
 const {
   registerSchema,
   loginSchema,
   refreshSchema,
   passwordSchema,
   resendEmailSchema,
+  googleLoginSchema,
 } = require("../../schemas");
 
 const ctrl = require("../../controllers");
@@ -28,6 +30,8 @@ router.post(
   validateBody(resendEmailSchema),
   ctrlWrapper(ctrl.resendEmail)
 );
+
+router.post("/googleLogin", validateBody(googleLoginSchema), ctrlWrapper(ctrl.googleLogin));
 
 router.post("/login", validateBody(loginSchema), ctrlWrapper(ctrl.login));
 

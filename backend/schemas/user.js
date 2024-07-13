@@ -47,10 +47,16 @@ const resendEmailSchema = Joi.object({
     .required(),
 });
 
+
+const googleLoginSchema = Joi.object({
+  googleAccessToken: Joi.string().required(),
+});
+
 module.exports = {
   registerSchema,
   loginSchema,
   refreshSchema,
   passwordSchema,
   resendEmailSchema,
+  googleLoginSchema
 };

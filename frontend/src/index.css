@@ -19,69 +19,9 @@
 
   --light-bg-color: #ffffff;
 
-  --dark-text-color: #ffffff;
-    --dark-background-color: #353535;
-    --dark-secondary-bg-color: #181717;
-    --dark-third-bg-color: rgb(29, 31, 34);
-    --dark-box-color: rgba(6, 6, 45, 0.247);
-    --dark-button-color: #40367b;
-    --dark-modal-bg: #2b2930;
 }
 
-/* .light {
-  .text {
-    color: var(--text-color);
-  };
 
-  .background {
-    background: linear-gradient(to right, var(--bg-color) 59.6%, var(--scroll-color) 59.6%);
-  }
-
-
-}
-
-.dark {
-  p {
-    color: var(--dark-text-color);
-  }
-  h2{
-    color: var(--dark-text-color);
-  }
-  .darkBackground {
-    background-image:url(./assets/png/backgroundDiaryCalcDeskTop_x2.png), linear-gradient(to right,var(--dark-background-color) 59.6%, var(--dark-third-bg-color) 59.6%);
-    background-repeat: no-repeat;
-      background-position: 100% 0%;
-      background-size: contain, 100% 100%;
-  }
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (-webkit-min-device-pixel-ratio: 2),
-    screen and (-o-min-device-pixel-ratio: 2/1),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx){
-    .darkBackground{
-      background-image: url(./assets//png/backgroundDiaryCalcDeskTop_x2.png),linear-gradient(to right, var(--dark-background-color), var(--dark-third-bg-color));
-      }   
-    }
-   
-
-  Input {
-    color: var(--dark-text-color);
-    background-color: var(--dark-box-color);
-
-    &:disabled {
-      color: var(--second-text-color);
-    }
-  }
-
-  button {
-    background: var(--dark-button-color);
-    color: var(--dark-text-color);
-    box-shadow: 0px 4px 10px rgba(199, 198, 197, 0.5);
-  }
-
-
-} */
 
 @font-face {
   font-family: 'gothampro';
